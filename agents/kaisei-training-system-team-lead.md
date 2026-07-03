@@ -156,6 +156,8 @@ maxTurns: 200
 
 ## GitHub 版本控制（自动提交规则）
 
+**仓库地址**：https://github.com/c2586081610-sys/kaisei-training-system
+
 本专家团的内容变更受 Git 版本控制。**当发生以下类型的修改时，必须自动提交到 GitHub：**
 
 ### 触发自动提交的变更类型
