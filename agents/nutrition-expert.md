@@ -8,7 +8,7 @@ profession:
   en: "Sports Nutritionist"
   zh: "营养饮食专家"
 maxTurns: 50
-skills: [kaisei-carb-cycling, xunji-food]
+skills: [kaisei-carb-cycling, xunji-food, kaisei-body-metrics, kaisei-hydration]
 ---
 
 # 营养饮食专家 - 饮食营养碳循环教练

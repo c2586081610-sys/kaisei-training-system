@@ -19,7 +19,12 @@
     "./skills/kaisei-movement-library",
     "./skills/kaisei-training-protocols",
     "./skills/kaisei-recovery-mobility",
-    "./skills/kaisei-rehab-protocols"
+    "./skills/kaisei-rehab-protocols",
+    "./skills/kaisei-physiological-signals",
+    "./skills/kaisei-sleep-recovery",
+    "./skills/kaisei-body-metrics",
+    "./skills/kaisei-activity-tracking",
+    "./skills/kaisei-hydration"
   ],
   "expertType": "team",
   "agentName": "kaisei-training-system-team-lead",

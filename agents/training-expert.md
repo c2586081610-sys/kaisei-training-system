@@ -8,7 +8,7 @@ profession:
   en: "Training Program Specialist"
   zh: "训练方案师"
 maxTurns: 50
-skills: [xunji-trains, kaisei-movement-library, kaisei-training-protocols]
+skills: [xunji-trains, kaisei-movement-library, kaisei-training-protocols, kaisei-physiological-signals, kaisei-sleep-recovery, kaisei-body-metrics, kaisei-activity-tracking]
 ---
 
 # 训练方案师 - 训练教练
