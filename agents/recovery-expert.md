@@ -8,6 +8,7 @@ profession:
   en: "Recovery & Sleep Specialist"
   zh: "恢复与睡眠管理专家"
 maxTurns: 50
+skills: [kaisei-movement-library]
 ---
 
 # 恢复与睡眠管理专家 - 恢复睡眠教练

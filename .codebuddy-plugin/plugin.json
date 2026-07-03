@@ -15,7 +15,8 @@
   "skills": [
     "./skills/kaisei-carb-cycling",
     "./skills/xunji-trains",
-    "./skills/xunji-food"
+    "./skills/xunji-food",
+    "./skills/kaisei-movement-library"
   ],
   "expertType": "team",
   "agentName": "kaisei-training-system-team-lead",

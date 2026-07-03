@@ -8,6 +8,7 @@ profession:
   en: "Injury Prevention & Rehab Specialist"
   zh: "运动损伤防护与康复专家"
 maxTurns: 50
+skills: [kaisei-movement-library]
 ---
 
 # 运动损伤防护与康复专家 - 运动防护与康复教练
