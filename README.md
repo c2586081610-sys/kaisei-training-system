@@ -34,11 +34,11 @@
 | `kaisei-training-protocols` | 训练教练 | ⏳ 5%（碳日-训练匹配已蒸馏） |
 | `kaisei-recovery-mobility` | 恢复教练 | ⏳ 0%（骨架已建，待蒸馏） |
 | `kaisei-rehab-protocols` | 防护教练 | ⏳ 0%（骨架已建，待蒸馏） |
-| `kaisei-physiological-signals` | 恢复+防护+训练 | ⏳ Phase 4（待 HealthKit 数据源） |
-| `kaisei-sleep-recovery` | 恢复+训练 | ⏳ Phase 4 |
-| `kaisei-body-metrics` | 训练+营养 | ⏳ Phase 4 |
-| `kaisei-activity-tracking` | 恢复+训练 | ⏳ Phase 4 |
-| `kaisei-hydration` | 营养+恢复 | ⏳ Phase 4 |
+| `kaisei-physiological-signals` | 恢复+防护+训练 | ✅ RHR/HRV/SpO2（Apple Health） |
+| `kaisei-sleep-recovery` | 恢复+训练 | ✅ 567 天睡眠（Apple Health） |
+| `kaisei-body-metrics` | 训练+营养 | ✅ 43 天体重（Apple Health） |
+| `kaisei-activity-tracking` | 恢复+训练 | ✅ 1352 天活动+80 个 workout（Apple Health） |
+| `kaisei-hydration` | 营养+恢复 | ✅ 7 天饮水（Apple Health，数据稀疏） |
 
 ## 本地数据根目录
 
