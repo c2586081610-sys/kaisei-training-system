@@ -1,0 +1,104 @@
+{
+  "name": "kaisei-training-system",
+  "version": "1.0.0",
+  "description": "Kaisei comprehensive fitness training system — carb cycling, sports nutrition, training programming, recovery management, and injury prevention & rehab",
+  "author": {
+    "name": "zzboy"
+  },
+  "agents": [
+    "./agents/kaisei-training-system-team-lead.md",
+    "./agents/training-expert.md",
+    "./agents/nutrition-expert.md",
+    "./agents/recovery-expert.md",
+    "./agents/injury-rehab-expert.md"
+  ],
+  "skills": ["./skills/kaisei-carb-cycling"],
+
+  "expertType": "team",
+  "agentName": "kaisei-training-system-team-lead",
+  "teamInfo": {
+    "leadAgent": "kaisei-training-system-team-lead",
+    "memberAgents": [
+      "training-expert",
+      "nutrition-expert",
+      "recovery-expert",
+      "injury-rehab-expert"
+    ]
+  },
+
+  "displayName": {
+    "en": "Kaisei Training System",
+    "zh": "凯圣王训练体系"
+  },
+  "profession": {
+    "en": "Kaisei Training System",
+    "zh": "凯圣王训练体系"
+  },
+  "displayDescription": {
+    "en": "Based on Kaisei's carb cycling methodology, a full-spectrum fitness team covering training programming, sports nutrition, recovery management and injury prevention & rehab.",
+    "zh": "基于凯圣王碳水循环体系，提供增肌减脂训练方案、营养饮食规划、恢复管理与运动损伤防护的综合健身团队。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "帮我设计一个8周碳水循环减脂计划，我体重75kg，体脂22%，每周训练4次",
+    "en": "Design an 8-week carb cycling fat loss plan for me: 75kg, 22% body fat, training 4x/week"
+  },
+  "plugin": "kaisei-training-system",
+  "tags": [
+    { "en": "Carb Cycling", "zh": "碳水循环" },
+    { "en": "Sports Nutrition", "zh": "运动营养" },
+    { "en": "Training Program", "zh": "训练计划" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Design an 8-week carb cycling fat loss plan for me: 75kg, 22% body fat, training 4x/week",
+      "zh": "帮我设计一个8周碳水循环减脂计划，我体重75kg，体脂22%，每周训练4次"
+    },
+    {
+      "en": "I feel very fatigued on a low-carb training day, how should I adjust?",
+      "zh": "我今天低碳日训练感觉很疲劳，应该怎么调整？"
+    },
+    {
+      "en": "My left shoulder clicks and hurts during overhead press, how to assess and fix it?",
+      "zh": "我的左肩在做推举时有弹响和疼痛，怎么评估和修复？"
+    }
+  ],
+  "members": [
+    {
+      "id": "kaisei-training-system-team-lead",
+      "displayName": { "en": "Kang Heyi", "zh": "康合一" },
+      "profession": { "en": "Training Director", "zh": "训练总监" },
+      "avatar": "avatars/kaisei-training-system-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "training-expert",
+      "displayName": { "en": "Lian Zhixing", "zh": "练知行" },
+      "profession": { "en": "Training Program Specialist", "zh": "训练方案师" },
+      "avatar": "avatars/training-expert.png",
+      "role": "member"
+    },
+    {
+      "id": "nutrition-expert",
+      "displayName": { "en": "Ying Zhiwei", "zh": "营知味" },
+      "profession": { "en": "Sports Nutritionist", "zh": "营养饮食专家" },
+      "avatar": "avatars/nutrition-expert.png",
+      "role": "member"
+    },
+    {
+      "id": "recovery-expert",
+      "displayName": { "en": "Su Jingyuan", "zh": "苏静元" },
+      "profession": { "en": "Recovery & Sleep Specialist", "zh": "恢复与睡眠管理专家" },
+      "avatar": "avatars/recovery-expert.png",
+      "role": "member"
+    },
+    {
+      "id": "injury-rehab-expert",
+      "displayName": { "en": "Wei Anran", "zh": "卫安然" },
+      "profession": { "en": "Injury Prevention & Rehab Specialist", "zh": "运动损伤防护与康复专家" },
+      "avatar": "avatars/injury-rehab-expert.png",
+      "role": "member"
+    }
+  ]
+}
