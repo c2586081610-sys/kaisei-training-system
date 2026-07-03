@@ -1,0 +1,43 @@
+{
+  "_comment": "凯圣王训练体系 - 数据根配置模板。复制为 ~/Documents/kaisei-data/data.config.json 并修改路径。",
+  "data_root": "/Users/<your-name>/Documents/kaisei-data",
+  "secrets_file": "secrets.json",
+  "secrets_keys": {
+    "XUNJI_TRAINS_KEY": "XUNJI_TRAINS_KEY",
+    "XUNJI_FOOD_KEY": "XUNJI_FOOD_KEY",
+    "XUNJI_FOOD_SEARCH_KEY": "XUNJI_FOOD_SEARCH_KEY"
+  },
+  "endpoints": {
+    "trains_base": "https://trains.xunjiapp.cn",
+    "food_base": "https://eatings.xunjiapp.cn",
+    "food_search_base": "https://api.xunjiapp.cn"
+  },
+  "caches": {
+    "trains_dir": "caches/trains",
+    "foods_dir": "caches/foods",
+    "movements_dir": "caches/movements"
+  },
+  "static": {
+    "pw_movements_slim": "static/peakwatch_movements_slim.json",
+    "pw_movements_full": "static/peakwatch_movements_structured.json",
+    "pw_config": "static/peakwatch_config.json",
+    "xunji_movements": "static/xunji_movements_full.json"
+  },
+  "private": {
+    "rhr": "private/rhr.json",
+    "hrv": "private/hrv.json",
+    "sleep": "private/sleep.json",
+    "spo2": "private/spo2.json",
+    "wrist_temp": "private/wrist_temp.json",
+    "body_metrics": "private/body_metrics.json",
+    "activity": "private/activity.json",
+    "hydration": "private/hydration.json"
+  },
+  "rate_limits": {
+    "trains_read": 15,
+    "trains_read_full": 30,
+    "trains_write": 45,
+    "food_all": 15
+  },
+  "audit_dir": "audit"
+}

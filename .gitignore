@@ -10,3 +10,15 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# 数据根配置（每个用户自己创建，不进 git）
+data.config.json
+data.config.local.json
+
+# Skills 内的运行时缓存（如有）
+skills/*/cache/
+skills/*/__pycache__/
+
+# 用户测试输出
+*.log
+!audit/*.log
