@@ -9,10 +9,14 @@
 | `kaisei-training-system-team-lead` | 统筹总教练 | 调度 + 汇编，不直连数据 | （空，铁律） |
 | `training-expert` | 训练教练 | 训练方案编排、动作指导、碳日-训练匹配、读写训记训练 | xunji-trains, kaisei-movement-library |
 | `nutrition-expert` | 饮食营养碳循环教练 | 碳循环计算、食物选择、动态调整、读写训记饮食 | kaisei-carb-cycling, xunji-food |
-| `recovery-expert` | 恢复睡眠教练 | 睡眠优化、疲劳管理、主动恢复策略 | kaisei-movement-library |
-| `injury-rehab-expert` | 运动防护与康复教练 | 损伤评估、康复方案、动作模式矫正 | kaisei-movement-library |
+| `recovery-expert` | 恢复睡眠教练 | 睡眠优化、疲劳管理、主动恢复策略 | kaisei-movement-library, xunji-trains, kaisei-recovery-mobility |
+| `injury-rehab-expert` | 运动防护与康复教练 | 损伤评估、康复方案、动作模式矫正 | kaisei-movement-library, xunji-trains, kaisei-rehab-protocols |
 
-## 4 个 Skill
+## 蒸馏协议
+
+新增凯圣王体系内容时按 [`docs/distillation-protocol.md`](docs/distillation-protocol.md) 协议写到对应 Skill。
+
+## 7 个 Skill
 
 ### 共享 Skill（多 Agent 共用）
 
@@ -27,9 +31,9 @@
 | Skill | Agent | 状态 |
 |---|---|---|
 | `kaisei-carb-cycling` | 营养教练 | ✅ 100%（凯圣王碳水循环上下集蒸馏） |
-| `kaisei-training-protocols` | 训练教练 | ⏳ Phase 5（待凯圣王体系蒸馏内容） |
-| `kaisei-recovery-mobility` | 恢复教练 | ⏳ Phase 5 |
-| `kaisei-rehab-protocols` | 防护教练 | ⏳ Phase 5 |
+| `kaisei-training-protocols` | 训练教练 | ⏳ 5%（碳日-训练匹配已蒸馏） |
+| `kaisei-recovery-mobility` | 恢复教练 | ⏳ 0%（骨架已建，待蒸馏） |
+| `kaisei-rehab-protocols` | 防护教练 | ⏳ 0%（骨架已建，待蒸馏） |
 | `kaisei-physiological-signals` | 恢复+防护+训练 | ⏳ Phase 4（待 HealthKit 数据源） |
 | `kaisei-sleep-recovery` | 恢复+训练 | ⏳ Phase 4 |
 | `kaisei-body-metrics` | 训练+营养 | ⏳ Phase 4 |
