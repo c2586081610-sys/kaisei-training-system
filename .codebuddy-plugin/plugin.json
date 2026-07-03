@@ -67,35 +67,35 @@
   "members": [
     {
       "id": "kaisei-training-system-team-lead",
-      "displayName": { "en": "Kang Heyi", "zh": "康合一" },
+      "displayName": { "en": "Lead Coach", "zh": "统筹总教练" },
       "profession": { "en": "Training Director", "zh": "训练总监" },
       "avatar": "avatars/kaisei-training-system-team-lead.png",
       "role": "lead"
     },
     {
       "id": "training-expert",
-      "displayName": { "en": "Lian Zhixing", "zh": "练知行" },
+      "displayName": { "en": "Training Coach", "zh": "训练教练" },
       "profession": { "en": "Training Program Specialist", "zh": "训练方案师" },
       "avatar": "avatars/training-expert.png",
       "role": "member"
     },
     {
       "id": "nutrition-expert",
-      "displayName": { "en": "Ying Zhiwei", "zh": "营知味" },
+      "displayName": { "en": "Nutrition Coach", "zh": "饮食营养碳循环教练" },
       "profession": { "en": "Sports Nutritionist", "zh": "营养饮食专家" },
       "avatar": "avatars/nutrition-expert.png",
       "role": "member"
     },
     {
       "id": "recovery-expert",
-      "displayName": { "en": "Su Jingyuan", "zh": "苏静元" },
+      "displayName": { "en": "Recovery Coach", "zh": "恢复睡眠教练" },
       "profession": { "en": "Recovery & Sleep Specialist", "zh": "恢复与睡眠管理专家" },
       "avatar": "avatars/recovery-expert.png",
       "role": "member"
     },
     {
       "id": "injury-rehab-expert",
-      "displayName": { "en": "Wei Anran", "zh": "卫安然" },
+      "displayName": { "en": "Injury & Rehab Coach", "zh": "运动防护与康复教练" },
       "profession": { "en": "Injury Prevention & Rehab Specialist", "zh": "运动损伤防护与康复专家" },
       "avatar": "avatars/injury-rehab-expert.png",
       "role": "member"
