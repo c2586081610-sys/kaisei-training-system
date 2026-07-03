@@ -1,7 +1,7 @@
 {
   "name": "kaisei-training-system",
   "version": "1.0.0",
-  "description": "Kaisei comprehensive fitness training system — carb cycling, sports nutrition, training programming, recovery management, and injury prevention & rehab",
+  "description": "Kaisei comprehensive fitness training system — carb cycling nutrition + Xunji training/diet API integration + PeakWatch 508-movement library. Covers training programming, sports nutrition, recovery management, and injury prevention & rehab.",
   "author": {
     "name": "zzboy"
   },
@@ -38,14 +38,14 @@
     "zh": "凯圣王训练体系"
   },
   "displayDescription": {
-    "en": "Based on Kaisei's carb cycling methodology, a full-spectrum fitness team covering training programming, sports nutrition, recovery management and injury prevention & rehab.",
-    "zh": "基于凯圣王碳水循环体系，提供增肌减脂训练方案、营养饮食规划、恢复管理与运动损伤防护的综合健身团队。"
+    "en": "Based on Kaisei's carb cycling methodology. Integrates with Xunji (训记) App via Open API to read your real training & diet history, and the PeakWatch 508-movement library. A full-spectrum fitness team covering training programming, sports nutrition, recovery management, and injury prevention & rehab.",
+    "zh": "基于凯圣王碳水循环体系。接入训记（Xunji）App 的 Open API 实时读取你的训练和饮食历史，融合 PeakWatch 508 个动作库。提供训练编排、运动营养、恢复管理、运动防护与康复的综合健身团队。"
   },
   "avatar": "avatars/team.png",
   "categoryId": "12-IndustryConsultant",
   "defaultInitPrompt": {
-    "zh": "帮我设计一个8周碳水循环减脂计划，我体重75kg，体脂22%，每周训练4次",
-    "en": "Design an 8-week carb cycling fat loss plan for me: 75kg, 22% body fat, training 4x/week"
+    "zh": "我体重75kg，体脂22%，每周训练4次，帮我算碳循环方案 + 查最近一周训练 + 给今天的训练建议",
+    "en": "I'm 75kg, 22% body fat, training 4x/week. Help me with: carb cycling plan + last week's training review + today's training recommendation"
   },
   "plugin": "kaisei-training-system",
   "tags": [
@@ -60,12 +60,36 @@
     {
       "en": "Training Program",
       "zh": "训练计划"
+    },
+    {
+      "en": "Xunji Integration",
+      "zh": "训记接入"
+    },
+    {
+      "en": "Movement Library",
+      "zh": "动作库"
     }
   ],
   "quickPrompts": [
     {
       "en": "Design an 8-week carb cycling fat loss plan for me: 75kg, 22% body fat, training 4x/week",
       "zh": "帮我设计一个8周碳水循环减脂计划，我体重75kg，体脂22%，每周训练4次"
+    },
+    {
+      "en": "What did I train last week? (reads your Xunji history)",
+      "zh": "我上周练了什么？（读你的训记训练历史）"
+    },
+    {
+      "en": "What should I eat today? (reads your Xunji diet + calculates carb cycling)",
+      "zh": "我今天该吃什么？（读你的训记饮食 + 算碳循环）"
+    },
+    {
+      "en": "What chest exercises can I do with dumbbells? (searches PW 508-movement library)",
+      "zh": "有什么练胸的哑铃动作？（搜 PW 508 动作库）"
+    },
+    {
+      "en": "What are the cautions for barbell bench press?",
+      "zh": "杠铃卧推的注意事项是什么？"
     },
     {
       "en": "I feel very fatigued on a low-carb training day, how should I adjust?",

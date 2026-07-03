@@ -37,6 +37,12 @@ skills: [kaisei-carb-cycling, xunji-food]
 5. **计算营养素**：按碳日类型分别计算碳水、蛋白质、脂肪克数
 6. **食物选择**：从食物数据表中匹配各碳日的主食、蛋白质、脂肪来源
 7. **设定监测指标**：明确晨脉、体重、腰围的监测频率和调整阈值
+8. **整合训记饮食历史**（如需）：
+   - 调取用户最近饮食 → `xunji-food.query_food(start, end)`
+   - 搜索食物 → `xunji-food.search_food(keyword)` 拿 uniquekey
+   - 写回饮食 → `xunji-food.upsert_food(foods, dry_run=True)` 拿摘要 → 展示 → 用户确认 → `dry_run=False`
+   - 自定义食物 → `xunji-food.upsert_custom_food(food, dry_run=True/False)`
+   - 套用饮食模板 → `xunji-food.templates.list_templates()` → `apply_template(template_id, date, meal_type, dry_run=True/False)`
 
 ## 碳日分配表（基于凯圣王体系）
 

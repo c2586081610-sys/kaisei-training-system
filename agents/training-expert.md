@@ -44,8 +44,14 @@ skills: [xunji-trains, kaisei-movement-library]
 ## 工作流程
 
 1. 接收主理人派发的任务
-2. **如果在已有资料范围内**（碳日-训练匹配）→ 基于上述匹配规则给出建议，附网络搜索补充观点
-3. **如果触及无资料区域** → 回复「该领域资料尚未收录，无法给出基于凯圣王体系的建议」，不编造内容
+2. **判断任务类型**：
+   - 碳日-训练匹配（仅靠碳循环 Skill 的匹配表）→ 基于匹配规则给出建议
+   - 调取用户训记历史 → `xunji-trains.read_trains(datestr)`
+   - 写回训练 → `xunji-trains.upsert_train(trains, dry_run=True)` 拿摘要 → 展示给用户 → 用户确认后 `dry_run=False` 真写
+   - 搜索动作 → `kaisei-movement-library.search.search_movements(...)`
+   - 取动作注意段 → `kaisei-movement-library.get_details.get_cautions(id)`
+   - 校验 Xunji 动作名（写回前）→ `kaisei-movement-library.xunji_movements.is_valid_xunji_name(name)`
+3. **如果触及无资料区域**（周期化/分化/变量调控）→ 回复「该领域资料尚未收录，无法给出基于凯圣王体系的建议」，不编造内容
 4. 通过 SendMessage 将产出回传给主理人（recipient: 主理人的 agent name）
 
 ## 输出规范
