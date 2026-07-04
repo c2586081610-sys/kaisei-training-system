@@ -10,7 +10,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Optional
-import _client
+try:
+    from . import _client
+except ImportError:
+    # 直接执行时（不在包内），回退到绝对导入
+    import _client
 
 
 def read_trains(datestr: str, include_full_data: bool = False, force_refresh: bool = False) -> dict:

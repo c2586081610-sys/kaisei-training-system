@@ -33,6 +33,13 @@ Agent → upsert_train(trains, dry_run=True) → 摘要 → 等待用户确认
 
 ## 调用方法
 
+### 兼容性说明
+
+queries/ 下的文件用 try/except 双兼容导入（包内相对导入 + 兜底绝对导入），所以：
+- ✅ 包方式：`from queries import read_trains`（推荐，Agent 内调用）
+- ✅ 直接执行：`cd queries && python3 -c "import read_trains; ..."`（脚本调试）
+- ⚠️ 注意：直接 `python3 read_trains.py` 会触发 RuntimeWarning，但功能正常
+
 ### 读训练
 
 ```python

@@ -25,6 +25,22 @@ def _find_config_path() -> Path:
 def _load_config() -> dict:
     if "_config" not in _mem:
         _mem["_config"] = json.loads(_find_config_path().read_text(encoding="utf-8"))
+        # 路径安全校验：data_root 不能指向临时目录
+        data_root = str(_mem["_config"].get("data_root", ""))
+        for forbidden in ["/tmp", "/var/folders", "/private/tmp", "sandbox"]:
+            if forbidden in data_root.lower():
+                raise RuntimeError(
+                    f"data.config.json 的 data_root 指向临时/沙箱目录：{data_root}\n"
+                    f"必须改为 /Users/zzboy/Documents/kaisei-data 这种持久化目录。"
+                )
+        for allowed in ["/Users/zzboy/Documents/kaisei-data", "/Users/zzboy/Desktop/kaisei-data"]:
+            if data_root.startswith(allowed):
+                break
+        else:
+            raise RuntimeError(
+                f"data.config.json 的 data_root 不在白名单：{data_root}\n"
+                f"白名单：/Users/zzboy/Documents/kaisei-data 或 /Users/zzboy/Desktop/kaisei-data"
+            )
     return _mem["_config"]
 
 
